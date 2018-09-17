@@ -13,3 +13,192 @@
  *= require_tree .
  *= require_self
  */
+
+@charset"utf-8";
+
+
+
+/* */ 
+
+body{
+    background: url(image1_copy.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.jumbotron{
+    background-image: url(nrj_logo2.jpg);
+    height: 250px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: white;
+    text-align: center;
+    align-content: center;
+    margin: 0;
+
+}
+
+
+nav{
+    margin-top: 1%;
+    font-family: 'Stylish', sans-serif;
+    background-color: white;
+    margin: 0;
+}
+
+.navbar{
+    background-color: white;
+    border-color: white;
+    margin: 0;
+}
+
+
+.col-sm-6{
+    background-color: beige;
+    font-size: 24pt;
+}
+
+a{
+    color:whitesmoke;
+    font-size: 14pt;
+    background-color: white;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.nav li{
+    color:whitesmoke;
+    font-size: 14pt;
+    font-family: 'Stylish', sans-serif;
+    background-color: white;
+}
+
+.navbar-brand{
+    font-size: 2em;
+    color:white; 
+}
+
+.icon-bar{
+    background-color: white;
+}
+
+#fa fa-instagram{
+    background-color: white;
+}
+
+#sign{
+    color: white;
+    font-size:30pt;
+}
+
+#allnatural{
+    background-image: url(IMG_2881.jpg);
+    height: 300px;
+    color: white;
+    font-size: 40pt;
+    padding: 5%;
+    text-align: center;
+    
+}
+
+#one{
+    height: 400px;
+    background-color: plum;
+    padding: 10%;
+
+}
+
+#innertext{
+    padding: 5%;
+    color: white;
+    font-size: 25pt;
+    border-style: solid;
+}
+
+#two{
+    background: transparent;
+    text-align: center;
+    height: 400px;
+    font-size: 40pt;
+    color: white;
+    padding: 30px;
+    font-size: 40pt;
+}
+
+#three{
+    height: 500px;
+    font-size: 20pt;
+    background-color: white;
+    padding: 20px;
+    align-content: center;
+}
+
+#four{
+    background-color: white;
+     background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+     height: 300px;
+}
+
+#five{
+    background-color: #88cc89;
+    height: 300px;
+    font-size: 20pt;
+}
+
+
+.col-sm-4 img{
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+}
+
+#juices{
+    padding: 0px;
+}
+
+
+footer{
+    background-color: aliceblue;
+    margin-top: 3%;
+    height: 250px;
+    font-size: 15pt;
+    text-align: center;
+    padding-top: 30px;
+    padding-right: 17px;
+    margin: 0;
+}
+
+#border1{
+    border-left-style: solid;
+    border-right-style: solid;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+}
+
+#border2{
+    border-right-style: solid;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+   
+}
+
+footer li{
+    background-color: aliceblue;
+    text-decoration: none;
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
