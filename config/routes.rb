@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
 get '/welcome', to: 'welcome#home' 
     
+get 'welcome/users/sign_in', to: 'welcome#sign_up'
+    
 get 'welcome/home', to: 'welcome#home'
 
 get 'welcome/menu', to:'welcome#menu'
