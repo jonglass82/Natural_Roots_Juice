@@ -16,10 +16,12 @@
    
 </head>
     
-
-<body>
+<h3><a href="users/sign_in">Sign in</a></h3>
     
-    <h3><a href="users/sign_in">Log in</a></h3>
+     <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+    
+    <h3><a href="users/sign_in">Create Account</a></h3>
+
     
 <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -43,6 +45,8 @@
         <li><a href="menu">Order</a></li>
     </ul>
     
+    
+    
     <ul class="nav navbar-nav navbar-right">
       <li><a href="https://www.instagram.com/naturalrootsjuice/">Follow Us On INSTAGRAM <i class="fa fa-instagram"></i></a></li>
     </ul>
@@ -51,6 +55,10 @@
     </div>
       
 </nav>
+    
+    <body>
+    
+    
 
  <div class="jumbotron" id="jumbotext">
          <div class="container" id="jumbo">
