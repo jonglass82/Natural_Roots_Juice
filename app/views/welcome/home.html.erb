@@ -16,11 +16,22 @@
    
 </head>
     
-<h3><a href="users/sign_in">Sign in</a></h3>
+
+<div class="login">
     
-     <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+<% if user_signed_in? %>
     
-    <h3><a href="users/sign_in">Create Account</a></h3>
+    <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+    
+<% else %>
+    
+   <%= link_to "Log in", new_user_session_path , class: 'signIn' %> 
+
+<% end %>
+    
+</div>
+        
+        
 
     
 <nav class="navbar navbar-default">
@@ -55,6 +66,8 @@
     </div>
       
 </nav>
+    
+   
     
     <body>
     

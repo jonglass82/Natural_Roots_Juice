@@ -20,6 +20,14 @@
 
 /* */ 
 
+.signIn{
+    color: darkgreen;
+}
+
+.login{
+    padding-left: 85%;
+}
+
 body{
     background: url(image1_copy.jpg);
     background-attachment: fixed;

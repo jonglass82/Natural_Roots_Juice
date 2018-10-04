@@ -1,4 +1,25 @@
-<h2>Log in</h2>
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Natural Roots Juice - Sign In</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="natural_roots_juice.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Stylish" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/9fc8d9c6d1.js"></script>
+</head>
+
+    
+<body>    
+
+<div class="container">
+    
+ 
+          <h2>Current User Log in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
@@ -22,5 +43,20 @@
     <%= f.submit "Log in" %>
   </div>
 <% end %>
+        
+        
+    
+    
+    <%= link_to "Sign up", new_registration_path(resource_name) %>       
+        
+</div>
+              
+    
+</body>
+    
+    
+    
+    
+</html>
 
-<%= render "devise/shared/links" %>
+
