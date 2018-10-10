@@ -16,22 +16,18 @@
    
 </head>
     
-
-<div class="login">
-    
-<% if user_signed_in? %>
+        
+<div id="login">
+    <% if user_signed_in? %>
     
     <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
     
 <% else %>
     
    <%= link_to "Log in", new_user_session_path , class: 'signIn' %> 
-
+ 
 <% end %>
-    
 </div>
-        
-        
 
     
 <nav class="navbar navbar-default">
@@ -67,13 +63,10 @@
       
 </nav>
     
+<body>
+    
    
-    
-    <body>
-    
-    
-
- <div class="jumbotron" id="jumbotext">
+<div class="jumbotron" id="jumbotext">
          <div class="container" id="jumbo">
             <div class="container" id="sign">
            
@@ -86,6 +79,9 @@
     
        <div id="allnatural">100% all Natural indgredients </div>
     
+    <div class="maincontent">
+ 
+    
         
     <div id="one">
         <div class="container" id="innertext">Lime Coco Melon: Watermelon, Lime, Agave nectar, Coconut water</div> </div>
@@ -96,7 +92,7 @@
     <div class="container" id="juices">
          <div class="row">
         <div class="col-sm-4">
-             <img src="image1_copy.jpeg"><button class="">Purple</button>
+             <img src="/app/assets/images/image1_copy.jpeg"><button class="">Purple</button>
             </div>
               <div class="col-sm-4">
              <img src="image1_copy.jpeg"><button class="">Purple</button>
@@ -125,6 +121,8 @@
      <div id="four">Red Goddess: Carrot, Red beet, Green apple, Lemon. Ginger</div>
     
     <div id="five">Electrolyte Balancer: Kale, Lime, Apple, Cucumber, Fennel, Coconut water </div>
+        
+    </div>
 
 </body>
 
