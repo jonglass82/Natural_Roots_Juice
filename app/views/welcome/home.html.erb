@@ -18,15 +18,19 @@
     
         
 <div id="login">
-    <% if user_signed_in? %>
     
-    <%= link_to "Sign Out", destroy_user_session_path, method: :delete %>
+    <% if current_user %>
     
-<% else %>
+    <%= link_to('Logout', destroy_user_session_path, method: :delete) %> 
     
-   <%= link_to "Log in", new_user_session_path , class: 'signIn' %> 
- 
-<% end %>
+    <% else %>
+    
+    
+    <%= link_to "Log in", new_user_session_path , class: 'signIn' %>
+    
+    <% end %>
+    
+    
 </div>
 
     
@@ -43,16 +47,22 @@
                  
         </div>
 
+   
         
 <div id="dropdown" class="collapse navbar-collapse">
-            
-    <ul class="nav navbar-nav">
+    
+    
+  <ul class="nav navbar-nav">
         <li><a href="home">Home</a></li>
         <li><a href="about">About</a></li>
         <li><a href="menu">Order</a></li>
+      
+      <% if current_user.try(:admin?) %>
+        <li><a href="">ADMIN</a></li>
+      <% end %>
+      
     </ul>
-    
-    
+
     
     <ul class="nav navbar-nav navbar-right">
       <li><a href="https://www.instagram.com/naturalrootsjuice/">Follow Us On INSTAGRAM <i class="fa fa-instagram"></i></a></li>
