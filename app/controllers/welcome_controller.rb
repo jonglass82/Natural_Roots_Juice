@@ -1,3 +1,4 @@
+
 class WelcomeController < ApplicationController
     
     
@@ -7,7 +8,6 @@ end
     
     
 def sign_in
-    
     
 end
     
@@ -19,9 +19,13 @@ end
 
 def admin
     
+    if current_user.try(:admin?)
+        render "admin_dashboard.html.erb"
+    else
+        flash[:notice] = "You do not have access"
+        redirect_to home_url
+    end
+    
 end
-    
-    
-    
     
 end

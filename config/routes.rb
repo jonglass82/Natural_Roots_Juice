@@ -20,7 +20,11 @@ get '/about', to:'welcome#about'
     
 get '/menu', to:'welcome#menu'
 
+get '/admin', to: 'welcome#admin'
+
 post '/signin', to: 'welcome#admin'
+
+
     
 #get '/devise/registrations/new', to:'welcome#sign_in'
     

@@ -14,3 +14,33 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+
+//var orders = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+//var currentAmount = 0;
+//
+//
+//
+//function addValue (item){
+//    
+//    var item = item.toString();
+//    
+//    if(currentAmount < orders.length-1){
+//       currentAmount ++;
+//       document.getElementById(item).innerHTML= orders[currentAmount];
+//   };
+//    
+//};
+//    
+//
+//function subtractValue (item){
+//    
+//    var item = item.toString();
+//  
+//    if(currentAmount > 0){
+//       currentAmount --;
+//       document.getElementById(item).innerHTML= orders[currentAmount];
+//   };
+//    
+//    
+//};
+
