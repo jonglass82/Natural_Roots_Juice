@@ -231,6 +231,10 @@ footer li{
 
 }
 
+#themenu{
+    padding: 20px;
+}
+
 #greenGoodness{
     background-color: lightgreen;
     padding: 20px;
