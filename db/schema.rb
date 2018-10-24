@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_11_174054) do
+ActiveRecord::Schema.define(version: 2018_10_24_173204) do
 
   create_table "admin_users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -24,6 +24,25 @@ ActiveRecord::Schema.define(version: 2018_10_11_174054) do
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
   end
 
+  create_table "orders", force: :cascade do |t|
+    t.string "phone_number"
+    t.string "name_for_order"
+    t.text "green_goodness_8_oz"
+    t.text "green_goodness_12_oz"
+    t.text "indigo_mood_8_oz"
+    t.text "indigo_mood_12_oz"
+    t.text "sweet_potato_pie_8_oz"
+    t.text "sweet_potato_pie_12_oz"
+    t.text "red_goddess_8_oz"
+    t.text "red_goddess_12_oz"
+    t.text "lime_coco_melon_8_oz"
+    t.text "lime_coco_melon_12_oz"
+    t.text "electrolyte_balancer_8_oz"
+    t.text "electrolyte_balancer_12_oz"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -33,6 +52,8 @@ ActiveRecord::Schema.define(version: 2018_10_11_174054) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean "admin", default: false
+    t.string "first_name"
+    t.string "last_name"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
