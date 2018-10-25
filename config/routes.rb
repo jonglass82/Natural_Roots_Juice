@@ -24,6 +24,8 @@ get '/admin', to: 'welcome#admin'
 
 post '/signin', to: 'welcome#admin'
 
+post '/menu', to: 'order#create_order'
+
 
     
 #get '/devise/registrations/new', to:'welcome#sign_in'

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_24_225121) do
+ActiveRecord::Schema.define(version: 2018_10_25_202826) do
 
   create_table "admin_users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -27,20 +27,20 @@ ActiveRecord::Schema.define(version: 2018_10_24_225121) do
   create_table "orders", force: :cascade do |t|
     t.string "phone_number"
     t.string "name_for_order"
-    t.text "green_goodness_8_oz"
-    t.text "green_goodness_12_oz"
-    t.text "indigo_mood_8_oz"
-    t.text "indigo_mood_12_oz"
-    t.text "sweet_potato_pie_8_oz"
-    t.text "sweet_potato_pie_12_oz"
-    t.text "red_goddess_8_oz"
-    t.text "red_goddess_12_oz"
-    t.text "lime_coco_melon_8_oz"
-    t.text "lime_coco_melon_12_oz"
-    t.text "electrolyte_balancer_8_oz"
-    t.text "electrolyte_balancer_12_oz"
+    t.text "green_goodness_16_oz"
+    t.text "indigo_mood_16_oz"
+    t.text "sweet_potato_pie_16_oz"
+    t.text "red_goddess_16_oz"
+    t.text "lime_coco_melon_16_oz"
+    t.text "electrolyte_balancer_16_oz"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string "green_goodness_12_oz"
+    t.string "indigo_mood_12_oz"
+    t.string "sweet_potato_pie_12_oz"
+    t.string "red_goddess_12_oz"
+    t.string "lime_coco_melon_12_oz"
+    t.string "electrolyte_balancer_12_oz"
   end
 
   create_table "users", force: :cascade do |t|
