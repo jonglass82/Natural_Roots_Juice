@@ -16,8 +16,11 @@ def sign_out
     
 end
     
+    
 
 def admin
+    
+    @orders = Order.all
     
     if current_user.try(:admin?)
         render "admin_dashboard.html.erb"

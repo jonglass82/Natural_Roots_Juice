@@ -235,6 +235,13 @@ footer li{
     padding: 20px;
 }
 
+#order{
+    background-color: lightgoldenrodyellow;
+    border-style: solid;
+    border-width: thin;
+    padding: 20px;
+}
+
 #greenGoodness{
     background-color: lightgreen;
     padding: 20px;

@@ -48,7 +48,83 @@
     
 <div class="container">    
     
- <h1>Orders:</h1>   
+ <h1>Orders:</h1> 
+    
+    <%= @orders.each do |juice| %>
+    
+    <div class="container" id="order">
+        
+        <p><b>Name:</b> <%= juice.name_for_order %></p>
+        
+        <p><b>Phone number:</b> <%= juice.phone_number %></p>
+    
+    <div class="container">
+        <p>Green Goodness 12 ounce:
+    <%= juice.green_goodness_12_oz %>
+        </p>
+    </div>
+    
+    <div class="container">
+    <p>Green Goodness 16 ounce:<%= juice.green_goodness_16_oz %></p>
+    </div>
+        
+        
+    <div class="container">
+    <p>Indigo Mood 12 ounce:
+    <%= juice.indigo_mood_12_oz %>
+    </p>
+    </div>
+    
+    <div class="container">
+    <p>Indigo Mood 16 ounce:<%= juice.indigo_mood_16_oz %></p>
+    </div>
+        
+        
+    <div class="container">
+    <p>Sweet Potato Pie 12 ounce:
+    <%= juice.sweet_potato_pie_12_oz %>
+    </p>
+    </div>
+    
+    <div class="container">
+    <p>Sweet Potato Pie 16 ounce:<%= juice.sweet_potato_pie_16_oz %></p>
+    </div>    
+        
+        
+    <div class="container">
+    <p>Red Goddess 12 ounce:
+    <%= juice.red_goddess_12_oz %>
+    </p>
+    </div>
+    
+    <div class="container">
+    <p>Red Goddess 16 ounce:<%= juice.red_goddess_16_oz %></p>
+    </div>  
+        
+    <div class="container">
+    <p>Lime Coco Melon 12 ounce:
+    <%= juice.lime_coco_melon_12_oz %>
+    </p>
+    </div>
+    
+    <div class="container">
+    <p>Lime Coco Melon 16 ounce:<%= juice.lime_coco_melon_16_oz %></p>
+    </div> 
+        
+        
+    <div class="container">
+    <p>Electrolyte Balancer 12 ounce:
+    <%= juice.electrolyte_balancer_12_oz %>
+        </p>
+    </div>
+    
+    <div class="container">
+    <p>Electrolyte Balancer 16 ounce:<%= juice.electrolyte_balancer_16_oz %></p>
+    </div> 
+        
+    </div>
+    
+    <% end %>
     
 </div>
     
