@@ -50,9 +50,12 @@
 
 <body>
     
-<div class="container">
     
-<h1>Place an Order:</h1>
+    <div class="container">
+    
+    <% if current_user %>
+     
+    <h1>Place an Order:</h1>
     
 </div>
     
@@ -215,13 +218,22 @@
                
 </div>
 
-</div>
-    
-    <p>
+     <p>
         <%= o.submit %>
-    </p>
+     </p>
            
-       <% end %>  
+       <% end %> 
+    
+<% else %>
+    
+    <h1>You must be logged in to place an order</h1>
+    
+    
+    <%= link_to "Log in", new_user_session_path , class: 'signIn' %>
+    
+    <% end %>
+    
+</div>
     
 
 </body>
